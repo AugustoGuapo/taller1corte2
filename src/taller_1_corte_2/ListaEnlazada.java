@@ -154,19 +154,20 @@ public class ListaEnlazada {
         }
     }
     
-    private void invertirLista() {
-          Nodo aux = cabeza, temp = null;
+    public void invertirLista() {
+        Nodo aux = cabeza;
+        Nodo temp;
 
-  while (aux.getSiguiente() != null) {
+        while (aux.getSiguiente() != null) {
 
-      temp = aux.getSiguiente();
+            temp = aux.getSiguiente();
 
-      aux.setSiguiente(temp.getSiguiente());
+            aux.setSiguiente(temp.getSiguiente());
 
-      temp.setSiguiente(cabeza);
+            temp.setSiguiente(cabeza);
 
-      cabeza = temp;
+            cabeza = temp;
 
-   }
+        }
     }
 }
