@@ -60,7 +60,7 @@ public class Taller_1_corte_2 {
                                                        0. Salir
                                                         
                                                         Seleccione una opci\u00f3n del 1 al 12: """));
- }while(opcion <= 0 || opcion > 8);
+ }while(opcion <= 0 || opcion > 12);
  return opcion;
  }
  public static void main(String[] args) {
@@ -139,7 +139,7 @@ public class Taller_1_corte_2 {
  case 10:
      lis.ordenarLista();
      listar(lis.getCabeza());
-     
+     break;
            
  case 11:
      lis.borrarMediaLista(1, lis.getCabeza());
@@ -153,6 +153,7 @@ public class Taller_1_corte_2 {
      } else {
          JOptionPane.showMessageDialog(null, "La Lista Está Vacía....");
      }
+     break;
  }
  }while(opcion != 0);
  }
